@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <script type="text/javascript" src="index.js"></script>
+  </head>
+  <body>
+    <div id="map"></div>
+
+    <!-- prettier-ignore -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsVs7TlM1x8uvkVldG_Lb93Wb6x4RaxHo&callback=initMap&v=weekly"
+      defer
+    ></script>
+    <div id="address">
+      出発点：<input class="start" type="text" placeholder="your address"><br>
+      終点：<input class="end" type="text" placeholder="行き先"><br>
+      時間：<input class="time" type="text" placeholder="time"><br>
+      <button onclick="confirm1()">確認</button>
+      <button onclick="reset1()">キャンセル</button>
+      
+      
+    </div>
+  </body>
+</html>
