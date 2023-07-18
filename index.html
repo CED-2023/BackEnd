@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <!-- <script type="text/javascript" src="index.js"></script> -->
+    <script src="index1.js"></script>
+  </head>
+  <body>
+    <button onclick="walking()">WALkING</button>
+    <button onclick="bike()">BICYCLING</button>
+    <button onclick="car()">DRIVING</button>
+    時間：<input class="input-box" type="text" />
+
+    <input
+      class="button1"
+      type="button"
+      value="検索"
+      onclick="getInputVal()"
+    />
+    <div id="map">
+      
+    </div>
+    
+    <!-- prettier-ignore -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsVs7TlM1x8uvkVldG_Lb93Wb6x4RaxHo&callback=initMap&v=weekly"
+      defer
+    ></script>
+  </body>
+</html>
